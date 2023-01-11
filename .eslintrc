@@ -1,0 +1,19 @@
+{
+  "extends": ["react-app", "prettier"],
+  "plugins": ["eslint-plugin-tsdoc"],
+  "overrides": [
+    {
+      "files": "*.mdx",
+      "extends": ["plugin:mdx/recommended"]
+    }
+  ],
+  "rules": {
+    "prefer-const": "warn",
+    "no-var": "warn",
+    "no-debugger": "warn",
+    "no-console": ["warn", { "allow": ["info", "warn", "error"] }],
+    "@typescript-eslint/no-explicit-any": "error",
+    "brace-style": "warn",
+    "curly": ["warn", "all"]
+  }
+}
