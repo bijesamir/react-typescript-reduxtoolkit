@@ -1,6 +1,5 @@
-# IRIS App / Front End
+# Front End
 
-> Data Product Plateform
 
 ```sh
 yarn install # install dependencies
