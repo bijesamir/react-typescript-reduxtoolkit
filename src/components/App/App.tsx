@@ -1,17 +1,12 @@
-import { HashRouter, Redirect, Route, Switch } from 'react-router-dom';
-import { Home } from '../Pages/Home/Home';
+import { HashRouter } from 'react-router-dom';
+import RouterConfig from './RouterConfig';
 
 export function App() {
   return (
+    // <Provider store={store}>
     <HashRouter>
-      <Switch>
-        <Route exact path='/'>
-          <Home />
-        </Route>
-        <Route path='*'>
-          <Redirect to='/' />
-        </Route>
-      </Switch>
+      <RouterConfig />
     </HashRouter>
+    // </Provider>
   );
 }

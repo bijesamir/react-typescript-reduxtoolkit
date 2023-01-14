@@ -1,12 +1,9 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  text-align: center;
-`;
+const Container = styled.div``;
 
 export function Home() {
-  return <Container>First page </Container>;
+  const activeNav = 'archive';
+
+  return <Container>First test page</Container>;
 }

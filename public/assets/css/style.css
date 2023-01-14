@@ -1,0 +1,130 @@
+:root {
+    ---darkest-color:#121619;
+    ---dark-color:#34393f;
+    ---highlight-color:#5300ff;
+    ---form-text-color:#c1c6cd;
+}
+.site {display:flex; height: 100%; height:100vh; overflow: hidden;}
+
+/* Logo */
+.logo img {
+    width:100%;
+}
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size:13px;
+}
+/* Main Nav */
+.mainnav {}
+.mainnav ul {margin:0px; padding:0px; list-style:none}
+.mainnav ul li {margin:0px; padding:0px; list-style:none; border-left:solid 3px transparent}
+.mainnav ul li:hover {background:var(---dark-color); border-color:var(---highlight-color)}
+
+/* First Col */
+.firstCol {
+    background:var(---darkest-color);
+    border-right:solid 1px var(---dark-color);
+    flex:0 1 auto;
+    max-width: 57px;
+}
+.secondCol{
+    background:var(---darkest-color); 
+    width:330px;
+    flex:0 1 auto;
+    max-width:330px;
+}
+
+.archiveSearch{
+    padding:0 15px;
+    color:var(---form-text-color);
+}
+.archiveSearch h2{
+    font-size:20px;
+    font-weight: normal;
+    padding:20px 0;
+    margin:0px;
+}
+.archiveSearch h3{
+    font-size:14px;
+    font-weight: 600;
+    padding: 16px 0 0 0;
+    margin: 0px;
+}
+.archiveSearch .form-row{
+    display: flex;
+    flex-direction: column;
+    padding-top:5px;
+}
+.archiveSearch .form-row select,.archiveSearch .form-row input[type=text]{
+    height:39px;
+    background:#21272a;
+    color:#ffffff;
+    border:none;
+    
+    border-bottom:solid 1px #696f77;
+    padding-left:15px;
+  
+}
+
+
+.archiveSearch .form-row .calendar{
+    position:relative
+}
+.archiveSearch .form-row .calendar img.calendarIcon{
+  position:absolute;   
+  right: 5px;
+    top: 15px;
+}
+.archiveSearch .multiform{
+    display:flex;
+    
+}
+.archiveSearch .formEle.endDate{
+    margin-left:7px;
+}
+.archiveSearch .form-row label,.archiveSearch .form-row .label{
+    margin:0px;
+    padding:10px 0 10px 0;
+    font-weight: normal;
+}
+.archiveSearch .formEle{
+display:flex;
+flex-direction: column;
+flex:1;
+padding-top:5px;
+}
+.archiveSearch  .mid-divider{
+display:flex;
+min-width:23px;
+justify-content: center;
+align-items: center;
+margin-top:5px;
+}
+.archiveSearch button.submit{
+    height: 48px;
+    background: var(---highlight-color);
+    /* text-align: center; */
+    /* line-height: 48px; */
+    border: none;
+    color: #fff;
+    text-align: left;
+    padding: 0px 0 0 15px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+
+}
+.archiveSearch .multiform .startDate{
+ width:calc(100% - 15px);
+
+}
+.archiveSearch .multiform .endDate{
+    width:calc(100% - 15px);
+}
+.thirdCol{
+    flex:1;
+}
+.map{
+    max-width:100%;
+    width:100%;
+}
