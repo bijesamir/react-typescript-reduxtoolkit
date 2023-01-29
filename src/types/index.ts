@@ -1,1 +1,1 @@
-export type { RouteItem1 } from './RouteItem';
+export type { RouteItem } from './RouteItem';
