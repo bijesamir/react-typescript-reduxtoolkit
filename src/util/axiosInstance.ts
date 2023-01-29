@@ -6,7 +6,7 @@ const ROOT_API = 'http://localhost:5000';
 interface RequestInterceptor {
   url: string;
   options?: RequestDataOptions;
-}
+};
 
 export const composeAxiosInstance = (requestInterceptor: RequestInterceptor) => {
   const axiosInstance = axios.create({
