@@ -1,40 +1,16 @@
 import { useEffect, useState } from 'react';
 import { useAppDispatch, useAppSelector } from '../store/hooks';
-import { updateUsers } from '../store/slices/usersSlice';
-
-const mockData = [
-  {
-    name: 'samir',
-    address: 'japan',
-  },
-  {
-    name: 'ram',
-    address: 'nepal',
-  },
-  {
-    name: 'sita',
-    address: 'india',
-  },
-  {
-    name: 'gopal',
-    address: 'japan',
-  },
-  {
-    name: 'kiran',
-    address: 'japan',
-  },
-];
+import { getUserList } from '../store/services/userApiServices';
 
 const useHome = () => {
-  const { usersList } = useAppSelector((state) => state);
+  const usersList = useAppSelector((state) => state.usersList);
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    dispatch(updateUsers(mockData));
-  }, []);
+    dispatch(getUserList());
+  }, [dispatch]);
 
   return {
-    mockData,
     usersList,
   };
 };

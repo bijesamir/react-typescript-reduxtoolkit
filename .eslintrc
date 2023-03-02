@@ -1,12 +1,6 @@
 {
   "extends": ["react-app", "prettier"],
   "plugins": ["eslint-plugin-tsdoc"],
-  "overrides": [
-    {
-      "files": "*.mdx",
-      "extends": ["plugin:mdx/recommended"]
-    }
-  ],
   "rules": {
     "prefer-const": "warn",
     "no-var": "warn",

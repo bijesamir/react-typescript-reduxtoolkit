@@ -1,4 +1,4 @@
-import { SerializedError } from "@reduxjs/toolkit";
+import { SerializedError } from '@reduxjs/toolkit';
 
 interface ApiError {
   data?: {

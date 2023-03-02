@@ -14,13 +14,22 @@ export const initialUsersState: UsersStateProps = {
 };
 
 export const usersSlice = createSlice({
-  name: 'loading',
+  name: 'user',
   initialState: initialUsersState,
   reducers: {
+    getUserList: (state, action) => {
+      state.userList = action.payload;
+    },
+    addUsers: (state, action) => {
+      state.userList = action.payload;
+    },
     updateUsers: (state, action) => {
+      state.userList = action.payload;
+    },
+    deleteUserList: (state, action) => {
       state.userList = action.payload;
     },
   },
 });
-export const { updateUsers } = usersSlice.actions;
+export const { getUserList, updateUsers, deleteUserList } = usersSlice.actions;
 export default usersSlice.reducer;
